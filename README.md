@@ -32,8 +32,6 @@
 
 该 Skill 用于根据机械设计说明书、CAD 图纸、图片、工程截图、PDF、DOCX 等资料，整理生成结构化的 SolidWorks / CAD 建模说明书。它可以输出建模概述、建模可行性分析、尺寸冲突与装配干涉检查、零件清单、零件尺寸规格、功能位置、装配配合关系、运动仿真设置和完整 Markdown 建模文档。
 
-可直接上传的 Skill 压缩包：[`structural-design/mechanical-modeling-doc.skill.zip`](./structural-design/mechanical-modeling-doc.skill.zip)
-
 ## 使用方式
 
 1. 下载对应 Skill 文件夹或 `.skill.zip` 文件；

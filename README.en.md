@@ -30,8 +30,6 @@ Location: [`structural-design/mechanical-modeling-doc`](./structural-design/mech
 
 This Skill helps generate structured SolidWorks / CAD modeling manuals from mechanical design documents, CAD drawings, images, engineering screenshots, PDFs, DOCX files, and other project materials. It can produce modeling overviews, feasibility assessments, dimension conflict checks, assembly interference checks, part lists, part specifications, functional positions, assembly mates, motion simulation settings, and complete Markdown modeling documentation.
 
-Ready-to-upload Skill archive: [`structural-design/mechanical-modeling-doc.skill.zip`](./structural-design/mechanical-modeling-doc.skill.zip)
-
 ## How to Use
 
 1. Download the Skill folder or the `.skill.zip` file;
