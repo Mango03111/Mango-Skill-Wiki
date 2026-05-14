@@ -1,0 +1,3 @@
+interface:
+  display_name: "Mechanical Modeling Doc"
+  short_description: "Create CAD modeling manuals from docs, images, and CAD files."
