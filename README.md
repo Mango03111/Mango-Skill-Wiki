@@ -23,6 +23,7 @@
 | 分类 | 文件夹 | 说明 |
 |---|---|---|
 | 结构设计 | [`structural-design`](./structural-design/) | 用于机械结构设计、CAD/SolidWorks 建模说明书、装配分析、尺寸冲突检查等场景 |
+| 代码辅助 | [`Code Assistance`](./Code%20Assistance/) | 用于开源贡献、代码审查、提交规范、PR 工作流、CI 触发和工程协作等场景 |
 
 ## 已收录 Skill
 
@@ -31,6 +32,12 @@
 位置：[`structural-design/mechanical-modeling-doc`](./structural-design/mechanical-modeling-doc/)
 
 该 Skill 用于根据机械设计说明书、CAD 图纸、图片、工程截图、PDF、DOCX 等资料，整理生成结构化的 SolidWorks / CAD 建模说明书。它可以输出建模概述、建模可行性分析、尺寸冲突与装配干涉检查、零件清单、零件尺寸规格、功能位置、装配配合关系、运动仿真设置和完整 Markdown 建模文档。
+
+### vllm-ascend-contribution
+
+位置：[`Code Assistance/vllm-ascend-contribution`](./Code%20Assistance/vllm-ascend-contribution/)
+
+该 Skill 用于引导 AI Agent 完成 `vllm-project/vllm-ascend` 仓库的贡献流程。它覆盖变更范围判断、本地 lint/CI/测试选择、DCO `Signed-off-by` 提交、PR 标题与正文规范、文档变更、多节点测试配置，以及 E2E/nightly 硬件 CI 触发评论等流程。
 
 ## 使用方式
 
@@ -41,6 +48,10 @@
 
 ```text
 使用 mechanical-modeling-doc 技能，帮我把这些资料整理成完整 SolidWorks 建模说明书。
+```
+
+```text
+使用 vllm-ascend-contribution 技能，帮我准备符合 vllm-ascend 规范的提交和 PR。
 ```
 
 ## 交流与改进

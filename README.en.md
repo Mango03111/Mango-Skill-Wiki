@@ -21,6 +21,7 @@ This repository is intended to:
 | Category | Folder | Description |
 |---|---|---|
 | Structural Design | [`structural-design`](./structural-design/) | Skills for mechanical structure design, CAD/SolidWorks modeling manuals, assembly analysis, and dimension conflict checks |
+| Code Assistance | [`Code Assistance`](./Code%20Assistance/) | Skills for open-source contribution, code review, commit conventions, PR workflows, CI triggers, and engineering collaboration |
 
 ## Included Skills
 
@@ -29,6 +30,12 @@ This repository is intended to:
 Location: [`structural-design/mechanical-modeling-doc`](./structural-design/mechanical-modeling-doc/)
 
 This Skill helps generate structured SolidWorks / CAD modeling manuals from mechanical design documents, CAD drawings, images, engineering screenshots, PDFs, DOCX files, and other project materials. It can produce modeling overviews, feasibility assessments, dimension conflict checks, assembly interference checks, part lists, part specifications, functional positions, assembly mates, motion simulation settings, and complete Markdown modeling documentation.
+
+### vllm-ascend-contribution
+
+Location: [`Code Assistance/vllm-ascend-contribution`](./Code%20Assistance/vllm-ascend-contribution/)
+
+This Skill guides AI agents through the `vllm-project/vllm-ascend` contribution workflow. It covers change-scope triage, local lint/CI/test selection, DCO `Signed-off-by` commits, PR title and body conventions, documentation changes, multi-node test configuration, and E2E/nightly hardware CI trigger comments.
 
 ## How to Use
 
@@ -39,6 +46,10 @@ This Skill helps generate structured SolidWorks / CAD modeling manuals from mech
 
 ```text
 Use the mechanical-modeling-doc skill to organize these materials into a complete SolidWorks modeling manual.
+```
+
+```text
+Use the vllm-ascend-contribution skill to prepare a compliant vllm-ascend commit and PR.
 ```
 
 ## Discussion and Improvements

@@ -1,0 +1,4 @@
+interface:
+  display_name: "vLLM Ascend Contribution"
+  short_description: "Guide AI agents through vLLM Ascend contribution workflow."
+  default_prompt: "Use $vllm-ascend-contribution to prepare a compliant vllm-ascend commit and PR."
