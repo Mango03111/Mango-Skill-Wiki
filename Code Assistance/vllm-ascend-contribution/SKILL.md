@@ -24,7 +24,7 @@ Primary references:
 2. Keep edits focused. Avoid unrelated formatting, generated artifacts, and local debugging fields.
 3. Run the narrowest useful local checks first, then broader checks when the change touches shared behavior.
 4. Commit with DCO sign-off.
-5. Open a PR whose title uses the required vllm-ascend prefix and whose body answers the template.
+5. Open a PR whose title uses only the official vllm-ascend title format and prefixes, and whose body answers the template.
 6. Trigger E2E/nightly hardware CI only when needed, and use targeted comments before adding labels.
 
 ## Local Setup and Checks
@@ -101,7 +101,15 @@ Rules for AI agents:
 
 ## PR Title Rules
 
-Only PRs with supported vllm-ascend title prefixes are expected to be reviewed. Use one or more exact prefixes followed by a concise summary:
+Mandatory rule: PR titles must use only the official vllm-ascend title format and official title prefixes. Do not invent prefixes, translate prefixes, use lowercase variants, use Conventional Commit prefixes such as `fix:` or `feat:`, or replace the official prefix with a module/file name.
+
+The only valid shape is:
+
+```text
+<one-or-more official prefixes> <concise imperative summary>
+```
+
+Only PRs with supported vllm-ascend title prefixes are expected to be reviewed. Use one or more exact official prefixes followed by a concise summary:
 
 ```text
 [BugFix] Fix scheduler state leak during graph mode
@@ -109,7 +117,7 @@ Only PRs with supported vllm-ascend title prefixes are expected to be reviewed. 
 [Doc] Add Qwen tutorial deployment notes
 ```
 
-Allowed prefixes:
+Official allowed prefixes:
 
 - `[Attention]` for new features or optimizations in attention.
 - `[Communicator]` for new features or optimizations in communicators.
@@ -124,7 +132,15 @@ Allowed prefixes:
 - `[CI]` for build or continuous integration improvements.
 - `[Misc]` only when no other category fits; use sparingly.
 
-If a PR spans multiple categories, include every relevant prefix.
+If a PR spans multiple categories, include every relevant official prefix.
+
+Rules for AI agents:
+
+- Never propose a PR title that lacks at least one exact official prefix from the list above.
+- Never create a new prefix based on the changed file, subsystem name, package name, issue label, or Conventional Commit category.
+- If the user provides a non-compliant title, rewrite it into the official format before using it.
+- If the category is unclear, ask the user or recheck the official contribution docs before proposing a title.
+- If the official docs change, follow the current official docs over this cached list.
 
 ## PR Body Rules
 
@@ -229,7 +245,7 @@ Before pushing or opening the PR, verify:
 - The worktree contains only intended changes.
 - Lint, local CI, unit tests, docs tests, or hardware tests were run as appropriate.
 - Every commit has `Signed-off-by:`.
-- The PR title uses exact supported prefixes.
+- The PR title uses only exact official supported prefixes and no invented prefix.
 - The PR body template is complete and includes test evidence.
 - E2E/nightly trigger comments, if used, were posted before labels.
 - Any inability to run NPU or multi-node tests is clearly documented.
