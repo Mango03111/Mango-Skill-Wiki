@@ -24,6 +24,7 @@
 |---|---|---|
 | 结构设计 | [`structural-design`](./structural-design/) | 用于机械结构设计、CAD/SolidWorks 建模说明书、装配分析、尺寸冲突检查等场景 |
 | 代码辅助 | [`Code Assistance`](./Code%20Assistance/) | 用于开源贡献、代码审查、提交规范、PR 工作流、CI 触发和工程协作等场景 |
+| 科研阅读 | [`Research`](./Research/) | 用于学术论文阅读、研究工作流、结构化笔记、真实问答记录和 Skill 知识库维护等场景 |
 
 ## 已收录 Skill
 
@@ -39,6 +40,18 @@
 
 该 Skill 用于引导 AI Agent 完成 `vllm-project/vllm-ascend` 仓库的贡献流程。它覆盖变更范围判断、本地 lint/CI/测试选择、DCO `Signed-off-by` 提交、PR 标题与正文规范、文档变更、多节点测试配置，以及 E2E/nightly 硬件 CI 触发评论等流程。
 
+### read-paper-with-notes
+
+位置：[`Research/read-paper-with-notes`](./Research/read-paper-with-notes/)
+
+该 Skill 用于陪伴式、分章节阅读学术论文，并同步维护简洁的 Markdown 阅读笔记。它强调先读懂论文的问题、方法、证据和局限，再按章节解释重点段落、关键词、图表和机制，同时只记录用户实际提出过的问题与简要回答，适合组会、汇报或深入理解论文前的阅读准备。
+
+### mango-skill-helper
+
+位置：[`Research/mango-skill-helper`](./Research/mango-skill-helper/)
+
+该 Skill 用于把新的 ChatGPT Skill 规范加入 Mango Skill Wiki。它会要求用户先选择现有分类文件夹或新建根目录分类文件夹，然后按仓库既有模式整理源码目录、`.skill.zip` 压缩包、分类 README，并同步补充根目录中英文 README。
+
 ## 使用方式
 
 1. 下载对应 Skill 文件夹或 `.skill.zip` 文件；
@@ -52,6 +65,14 @@
 
 ```text
 使用 vllm-ascend-contribution 技能，帮我准备符合 vllm-ascend 规范的提交和 PR。
+```
+
+```text
+使用 read-paper-with-notes 技能，带我按章节读懂这篇论文，并维护一份简洁的阅读笔记。
+```
+
+```text
+使用 mango-skill-helper 技能，帮我把这个 skill 加入指定分类，并同步更新 README。
 ```
 
 ## 交流与改进

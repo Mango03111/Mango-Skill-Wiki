@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mango Skill Helper"
+  short_description: "将新 Skill 规范加入 Mango Skill Wiki，并同步分类与根目录 README"
+  default_prompt: "Use $mango-skill-helper to add this skill package to a chosen Mango Skill Wiki category and update the README files."

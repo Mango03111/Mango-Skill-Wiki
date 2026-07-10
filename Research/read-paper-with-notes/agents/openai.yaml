@@ -1,0 +1,4 @@
+interface:
+  display_name: "论文阅读陪跑"
+  short_description: "按章节读懂论文，并自动沉淀结构化阅读笔记和真实问答"
+  default_prompt: "Use $read-paper-with-notes to guide me through a paper section by section and maintain concise reading notes."
