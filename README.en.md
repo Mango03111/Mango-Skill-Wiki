@@ -21,8 +21,8 @@ This repository is intended to:
 | Category | Folder | Description |
 |---|---|---|
 | Structural Design | [`structural-design`](./structural-design/) | Skills for mechanical structure design, CAD/SolidWorks modeling manuals, assembly analysis, and dimension conflict checks |
-| Code Assistance | [`Code Assistance`](./Code%20Assistance/) | Skills for open-source contribution, code review, commit conventions, PR workflows, CI triggers, and engineering collaboration |
-| Research | [`Research`](./Research/) | Skills for academic paper reading, research workflows, structured notes, real Q&A records, and Skill knowledge-base maintenance |
+| code-assistance | [`code-assistance`](./code-assistance/) | Skills for open-source contribution, code review, commit conventions, PR workflows, CI triggers, and engineering collaboration |
+| research | [`research`](./research/) | Skills for academic paper reading, research workflows, structured notes, real Q&A records, and Skill knowledge-base maintenance |
 
 ## Included Skills
 
@@ -34,19 +34,19 @@ This Skill helps generate structured SolidWorks / CAD modeling manuals from mech
 
 ### vllm-ascend-contribution
 
-Location: [`Code Assistance/vllm-ascend-contribution`](./Code%20Assistance/vllm-ascend-contribution/)
+Location: [`code-assistance/vllm-ascend-contribution`](./code-assistance/vllm-ascend-contribution/)
 
 This Skill guides AI agents through the `vllm-project/vllm-ascend` contribution workflow. It covers change-scope triage, local lint/CI/test selection, DCO `Signed-off-by` commits, PR title and body conventions, documentation changes, multi-node test configuration, and E2E/nightly hardware CI trigger comments.
 
 ### read-paper-with-notes
 
-Location: [`Research/read-paper-with-notes`](./Research/read-paper-with-notes/)
+Location: [`research/read-paper-with-notes`](./research/read-paper-with-notes/)
 
 This Skill guides section-by-section academic paper reading while maintaining a concise Markdown reading archive. It focuses on understanding the paper's problem, method, evidence, and limitations before presentation work, explains key paragraphs, terms, figures, tables, and mechanisms, and records only the user's actual questions with brief answers.
 
 ### mango-skill-helper
 
-Location: [`Research/mango-skill-helper`](./Research/mango-skill-helper/)
+Location: [`research/mango-skill-helper`](./research/mango-skill-helper/)
 
 This Skill adds new ChatGPT Skills to Mango Skill Wiki in the repository's standard format. It requires the user to choose an existing category folder or request a new top-level category folder first, then organizes the source folder, `.skill.zip` package, category README, and root Chinese and English README entries.
 

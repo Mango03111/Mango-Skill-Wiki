@@ -1,4 +1,4 @@
-# Code Assistance
+# code-assistance
 
 本分类用于存放与代码贡献、开源协作、代码审查、提交规范、PR 工作流、CI 触发和工程实践相关的 Skills。
 

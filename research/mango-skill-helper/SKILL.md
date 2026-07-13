@@ -34,7 +34,7 @@ Before making file edits, the user must explicitly choose where the new skill sh
 
 Accepted target choices:
 
-- an existing top-level category folder, such as `Research`, `Code Assistance`, or `structural-design`;
+- an existing top-level category folder, such as `research`, `code-assistance`, or `structural-design`;
 - a new top-level category folder to create.
 
 If the user does not specify the target category folder, stop and ask them to choose one. Do not infer the folder from the skill topic, filename, or description.
@@ -128,10 +128,10 @@ Use English in root `README.en.md`.
 
 Keep descriptions short, practical, and matched to the skill's actual `SKILL.md` content. Do not overstate capabilities. Prefer describing the workflow rather than marketing it.
 
-When linking folders with spaces in root README files, use URL-encoded paths such as:
+When linking category folders in root README files, use the exact folder slug:
 
 ```markdown
-[`Code Assistance`](./Code%20Assistance/)
+[`code-assistance`](./code-assistance/)
 ```
 
 When linking `#skillPackage`, use `%23` to avoid broken Markdown anchors:
