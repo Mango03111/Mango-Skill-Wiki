@@ -40,6 +40,12 @@
 
 该 Skill 用于引导 AI Agent 完成 `vllm-project/vllm-ascend` 仓库的贡献流程。它覆盖变更范围判断、本地 lint/CI/测试选择、DCO `Signed-off-by` 提交、PR 标题与正文规范、文档变更、多节点测试配置，以及 E2E/nightly 硬件 CI 触发评论等流程。
 
+### competition-version-iteration
+
+位置：[`code-assistance/competition-version-iteration`](./code-assistance/competition-version-iteration/)
+
+该 Skill 用于安全维护竞赛或其他 Git 项目的版本历史。它可以初始化正式发布分支配置，在用户明确授权后发布带提交和注释标签的新版本，或将用户提供的赛后结果追加到版本记录中，同时避免改写已发布标签和历史。
+
 ### read-paper-with-notes
 
 位置：[`research/read-paper-with-notes`](./research/read-paper-with-notes/)
@@ -65,6 +71,10 @@
 
 ```text
 使用 vllm-ascend-contribution 技能，帮我准备符合 vllm-ascend 规范的提交和 PR。
+```
+
+```text
+使用 competition-version-iteration 技能，帮我安全发布或记录这个项目的版本。
 ```
 
 ```text

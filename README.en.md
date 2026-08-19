@@ -38,6 +38,12 @@ Location: [`code-assistance/vllm-ascend-contribution`](./code-assistance/vllm-as
 
 This Skill guides AI agents through the `vllm-project/vllm-ascend` contribution workflow. It covers change-scope triage, local lint/CI/test selection, DCO `Signed-off-by` commits, PR title and body conventions, documentation changes, multi-node test configuration, and E2E/nightly hardware CI trigger comments.
 
+### competition-version-iteration
+
+Location: [`code-assistance/competition-version-iteration`](./code-assistance/competition-version-iteration/)
+
+This Skill safely maintains version history for competition and other Git projects. It initializes release-branch settings, publishes a new version with a commit and annotated tag only after explicit authorization, and appends user-supplied post-release results without rewriting published tags or history.
+
 ### read-paper-with-notes
 
 Location: [`research/read-paper-with-notes`](./research/read-paper-with-notes/)
@@ -63,6 +69,10 @@ Use the mechanical-modeling-doc skill to organize these materials into a complet
 
 ```text
 Use the vllm-ascend-contribution skill to prepare a compliant vllm-ascend commit and PR.
+```
+
+```text
+Use the competition-version-iteration skill to publish or record this project's version safely.
 ```
 
 ```text

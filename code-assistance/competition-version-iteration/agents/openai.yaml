@@ -1,0 +1,4 @@
+interface:
+  display_name: "Competition Version Iteration"
+  short_description: "Safely publish and record Git project versions"
+  default_prompt: "Use $competition-version-iteration to publish or record a project version safely."
