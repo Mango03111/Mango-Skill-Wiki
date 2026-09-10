@@ -7,6 +7,7 @@
 | Skill | 说明 | 可上传压缩包 |
 |---|---|---|
 | [`read-paper-with-notes`](./read-paper-with-notes/) | 按章节陪伴式阅读论文，解释概念、图表、关键词和论文逻辑，并自动沉淀结构化 Markdown 阅读笔记与真实问答记录 | [`read-paper-with-notes.skill.zip`](./%23skillPackage/read-paper-with-notes.skill.zip) |
+| [`mango-paper-summary`](./mango-paper-summary/) | 按固定八项字段提取论文信息，输出100–200字概括及有依据的优缺点评估，直接给出中文摘要，无开场白或总结性语句 | [`mango-paper-summary.skill.zip`](./%23skillPackage/mango-paper-summary.skill.zip) |
 | [`human-in-the-loop-paper`](./human-in-the-loop-paper/) | 协调 plan、latex、code 三仓库论文研究，以任务 ID 关联计划、分支和 PR，支持子代理实施与审查、逐阶段人工验收及批准后提交，附精简 hitl.toml 模板 | [`human-in-the-loop-paper.skill.zip`](./%23skillPackage/human-in-the-loop-paper.skill.zip) |
 | [`mango-skill-helper`](./mango-skill-helper/) | 将新 Skill 规范加入 Mango Skill Wiki，强制确认目标分类文件夹，并同步源码、压缩包、分类 README 与根目录中英文 README | [`mango-skill-helper.skill.zip`](./%23skillPackage/mango-skill-helper.skill.zip) |
 
@@ -20,6 +21,10 @@
 
 ```text
 使用 read-paper-with-notes 技能，带我按章节读懂这篇论文，并维护一份简洁的阅读笔记。
+```
+
+```text
+使用 mango-paper-summary 技能，按固定格式总结这篇论文，并分析其优缺点。
 ```
 
 ```text

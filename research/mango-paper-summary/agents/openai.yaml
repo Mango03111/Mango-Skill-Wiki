@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mango Paper Summary"
+  short_description: "按固定格式提取论文信息，输出百字概括与有依据的优缺点评估"
+  default_prompt: "使用 $mango-paper-summary，按规定的八项字段总结我提供的论文，直接输出中文摘要及优缺点评估。"

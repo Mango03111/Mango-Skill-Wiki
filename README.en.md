@@ -50,6 +50,12 @@ Location: [`research/read-paper-with-notes`](./research/read-paper-with-notes/)
 
 This Skill guides section-by-section academic paper reading while maintaining a concise Markdown reading archive. It focuses on understanding the paper's problem, method, evidence, and limitations before presentation work, explains key paragraphs, terms, figures, tables, and mechanisms, and records only the user's actual questions with brief answers.
 
+### mango-paper-summary
+
+Location: [`research/mango-paper-summary`](./research/mango-paper-summary/)
+
+This Skill produces a one-pass structured summary of a user-provided paper in Chinese. It uses eight fixed fields: title, research categories, journal or conference, research group, authors, notable features, overview, and strengths and weaknesses. It requires a 100–200-character overview of the topic, purpose, innovations, and contributions, along with evidence-based critical evaluation. Missing information is marked explicitly, and the summary is delivered without an opening or closing statement.
+
 ### human-in-the-loop-paper
 
 Location: [`research/human-in-the-loop-paper`](./research/human-in-the-loop-paper/)
@@ -83,6 +89,10 @@ Use the competition-version-iteration skill to publish or record this project's 
 
 ```text
 Use the read-paper-with-notes skill to guide me through this paper section by section and maintain concise reading notes.
+```
+
+```text
+Use the mango-paper-summary skill to summarize this paper in the fixed Chinese format and critically assess its strengths and weaknesses.
 ```
 
 ```text

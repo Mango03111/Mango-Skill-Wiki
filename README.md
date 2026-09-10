@@ -52,6 +52,12 @@
 
 该 Skill 用于陪伴式、分章节阅读学术论文，并同步维护简洁的 Markdown 阅读笔记。它强调先读懂论文的问题、方法、证据和局限，再按章节解释重点段落、关键词、图表和机制，同时只记录用户实际提出过的问题与简要回答，适合组会、汇报或深入理解论文前的阅读准备。
 
+### mango-paper-summary
+
+位置：[`research/mango-paper-summary`](./research/mango-paper-summary/)
+
+该 Skill 用于对用户提供的论文进行一次性结构化总结，按固定顺序输出论文题目、论文分类、期刊/会议名称、研究组、作者、显著特征、概括和优缺点。它要求使用100–200字概括核心主题、研究目的、创新点与贡献，并基于论文内容批判性评估优缺点；信息缺失时如实标注，直接给出中文摘要，不添加开场白或总结性语句。
+
 ### human-in-the-loop-paper
 
 位置：[`research/human-in-the-loop-paper`](./research/human-in-the-loop-paper/)
@@ -85,6 +91,10 @@
 
 ```text
 使用 read-paper-with-notes 技能，带我按章节读懂这篇论文，并维护一份简洁的阅读笔记。
+```
+
+```text
+使用 mango-paper-summary 技能，按固定格式总结这篇论文，并分析其优缺点。
 ```
 
 ```text
