@@ -50,6 +50,12 @@ Location: [`research/read-paper-with-notes`](./research/read-paper-with-notes/)
 
 This Skill guides section-by-section academic paper reading while maintaining a concise Markdown reading archive. It focuses on understanding the paper's problem, method, evidence, and limitations before presentation work, explains key paragraphs, terms, figures, tables, and mechanisms, and records only the user's actual questions with brief answers.
 
+### human-in-the-loop-paper
+
+Location: [`research/human-in-the-loop-paper`](./research/human-in-the-loop-paper/)
+
+This Skill coordinates a human-in-the-loop paper research workflow across separate `plan`, `latex`, and `code` Git repositories. Shared task IDs link task documents, repository branches, and PRs. It coordinates implementation and independent review subagents, human acceptance of each phase, and user-approved batched phase commits, pushes, and Draft PR creation, while distinguishing phase completion, readiness to merge, and task closure. Its minimal `hitl.toml` template stores only the three repository locations and the framework, exact model ID, and reasoning effort for writing and coding/review subagents.
+
 ### mango-skill-helper
 
 Location: [`research/mango-skill-helper`](./research/mango-skill-helper/)
@@ -77,6 +83,10 @@ Use the competition-version-iteration skill to publish or record this project's 
 
 ```text
 Use the read-paper-with-notes skill to guide me through this paper section by section and maintain concise reading notes.
+```
+
+```text
+Use the human-in-the-loop-paper skill to initialize or continue my three-repository paper workflow with human acceptance at each phase.
 ```
 
 ```text

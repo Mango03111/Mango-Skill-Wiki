@@ -1,0 +1,4 @@
+interface:
+  display_name: "human in the loop paper"
+  short_description: "在计划、论文和代码三仓库中协调子代理、阶段验收与人工批准提交"
+  default_prompt: "使用 $human-in-the-loop-paper，帮我初始化或继续三仓库论文工作流，并按阶段进行人工验收。"

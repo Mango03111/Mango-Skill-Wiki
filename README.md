@@ -52,6 +52,12 @@
 
 该 Skill 用于陪伴式、分章节阅读学术论文，并同步维护简洁的 Markdown 阅读笔记。它强调先读懂论文的问题、方法、证据和局限，再按章节解释重点段落、关键词、图表和机制，同时只记录用户实际提出过的问题与简要回答，适合组会、汇报或深入理解论文前的阅读准备。
 
+### human-in-the-loop-paper
+
+位置：[`research/human-in-the-loop-paper`](./research/human-in-the-loop-paper/)
+
+该 Skill 用于在独立的 `plan`、`latex` 和 `code` Git 仓库中组织人类参与的论文研究工作流。它通过统一任务 ID 关联任务文档、各仓库分支和 PR，协调子代理实施与独立审查、逐阶段人工验收，以及用户批准后按仓库整合阶段变更、提交、推送和创建 Draft PR，并区分阶段完成、任务待合并与任务已关闭。附带精简的 `hitl.toml` 模板，仅保存三个仓库位置及写作、编码与审查子代理的框架、精确模型 ID 和推理强度。
+
 ### mango-skill-helper
 
 位置：[`research/mango-skill-helper`](./research/mango-skill-helper/)
@@ -79,6 +85,10 @@
 
 ```text
 使用 read-paper-with-notes 技能，带我按章节读懂这篇论文，并维护一份简洁的阅读笔记。
+```
+
+```text
+使用 human-in-the-loop-paper 技能，帮我初始化或继续三仓库论文工作流，并按阶段进行人工验收。
 ```
 
 ```text
