@@ -25,7 +25,7 @@ description: 在独立的 plan、latex、code 三个 Git 仓库中，以任务�
 
 2、启动子agent的时候，应当优先新建一个tab并在其中创建子agent，而非在当前pane切分窗口；同时将子agent的会话名称调整为和子agent一致，并在开头添加关联的任务ID，用于后续溯源和重启（注释：opencode重命名会话需要用ctrl+R快捷键）。
 
-3、对于所有与写作有关的子agent，包括撰写论文或计划中的部分内容，始终使用高推理强度的Codex GPT-5.6-sol。对于与编码或审查有关的子代理，始终使用高推理强度的opencode及用户指定的Qwen模型。该模型必须使用实际服务返回的精确模型ID，并在初始化时统一写入hitl.toml；启动代理时读取同一配置，不再混用模型简称或不同拼写。（以上模型为默认配置，可由用户自行更改；此步骤如果有冲突，请询问用户而非自行决定配置）
+3、仅论文正文及其LaTeX内容使用高推理强度的Codex GPT-5.6-sol，并读取`[agents.paper_writing]`配置；计划、任务文档和其他非论文写作使用高推理强度的opencode及用户指定的Qwen模型，并读取`[agents.writing]`配置。对于与编码或审查有关的子代理，始终使用高推理强度的opencode及用户指定的Qwen模型。各模型必须使用实际服务返回的精确模型ID，并在初始化时统一写入hitl.toml；启动代理时读取同一配置，不再混用模型简称或不同拼写。（以上模型为默认配置，可由用户自行更改；此步骤如果有冲突，请询问用户而非自行决定配置）
 
 4、对于每项任务，启动一个全新的独立子代理负责实现，并为其定义明确的验收标准；随后再启动另一个子代理，审查具体实现以及是否满足验收标准。
 
@@ -62,7 +62,8 @@ description: 在独立的 plan、latex、code 三个 Git 仓库中，以任务�
 初始化配置时读取本 skill 的 [assets/hitl.toml](assets/hitl.toml)，以其为模板生成用户指定的 plan 仓库根目录中的 `hitl.toml`。模板中的空字符串是待用户提供的输入，不是可直接启动代理的配置；用户已有明确指定的信息不重复询问。
 
 - `[repositories]` 的 `plan`、`latex`、`code` 保存用户指定的三个仓库的具体位置。
-- `[agents.writing]` 的 `framework`、`model_id`、`reasoning_effort` 用于写作、论文和计划编写子代理。
+- `[agents.paper_writing]` 的 `framework`、`model_id`、`reasoning_effort` 用于论文正文及其 LaTeX 内容。
+- `[agents.writing]` 的 `framework`、`model_id`、`reasoning_effort` 用于计划、任务文档和其他非论文写作。
 - `[agents.coding_and_review]` 的同名字段共同用于编码和审查子代理，确保模型ID保持一致。
 - `model_id` 保存实际服务返回的精确模型ID。读取已有配置时遵循用户已确认的设置；若配置有缺失或冲突，向用户补齐或确认，不能自行选择其他模型或框架。
 - `hitl.toml` 仅保存上述仓库位置及子代理配置；任务、阶段、审批进度和分支/PR关联记录在相应任务md文档中，不向TOML增加工作流策略、状态或其他冗余字段。

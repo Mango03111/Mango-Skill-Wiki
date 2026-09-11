@@ -3,9 +3,15 @@ plan = ""
 latex = ""
 code = ""
 
-[agents.writing]
+[agents.paper_writing]
 framework = "codex"
 model_id = "gpt-5.6-sol"
+reasoning_effort = "high"
+
+[agents.writing]
+framework = "opencode"
+# 初始化时填写实际服务返回的精确模型ID。
+model_id = ""
 reasoning_effort = "high"
 
 [agents.coding_and_review]
