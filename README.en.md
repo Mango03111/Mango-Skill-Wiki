@@ -60,7 +60,7 @@ This Skill produces a one-pass structured summary of a user-provided paper in Ch
 
 Location: [`research/human-in-the-loop-paper`](./research/human-in-the-loop-paper/)
 
-This Skill coordinates a human-in-the-loop paper research workflow across separate `plan`, `latex`, and `code` Git repositories. Shared task IDs link task documents, repository branches, and PRs. It coordinates implementation and independent review subagents, human acceptance of each phase, and user-approved batched phase commits, pushes, and Draft PR creation, while distinguishing phase completion, readiness to merge, and task closure. Its minimal `hitl.toml` template stores only the three repository locations and the framework, exact model ID, and reasoning effort for writing and coding/review subagents.
+This Skill coordinates a human-in-the-loop paper research workflow across separate `plan`, `latex`, and `code` Git repositories. Shared task IDs link task documents, repository branches, and PRs. The main agent maintains plan documents directly while coordinating paper-writing, coding, and independent review subagents, human acceptance of each phase, and user-approved batched phase commits, pushes, and Draft PR creation. Its minimal `hitl.toml` template stores only the three repository locations and the framework, exact model ID, and reasoning effort for paper-writing and coding/review subagents.
 
 ### mango-skill-helper
 

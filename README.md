@@ -62,7 +62,7 @@
 
 位置：[`research/human-in-the-loop-paper`](./research/human-in-the-loop-paper/)
 
-该 Skill 用于在独立的 `plan`、`latex` 和 `code` Git 仓库中组织人类参与的论文研究工作流。它通过统一任务 ID 关联任务文档、各仓库分支和 PR，协调子代理实施与独立审查、逐阶段人工验收，以及用户批准后按仓库整合阶段变更、提交、推送和创建 Draft PR，并区分阶段完成、任务待合并与任务已关闭。附带精简的 `hitl.toml` 模板，仅保存三个仓库位置及写作、编码与审查子代理的框架、精确模型 ID 和推理强度。
+该 Skill 用于在独立的 `plan`、`latex` 和 `code` Git 仓库中组织人类参与的论文研究工作流。它通过统一任务 ID 关联任务文档、各仓库分支和 PR，由主 Agent 直接维护 plan 文档，并协调论文写作、编码与独立审查子代理、逐阶段人工验收，以及用户批准后按仓库整合阶段变更、提交、推送和创建 Draft PR。附带精简的 `hitl.toml` 模板，仅保存三个仓库位置及论文写作、编码与审查子代理的框架、精确模型 ID 和推理强度。
 
 ### mango-skill-helper
 
